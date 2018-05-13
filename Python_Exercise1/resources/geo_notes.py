@@ -7,7 +7,6 @@ class Geo_Notes(Resource):
 
     def get(self, device_name):
         '''Get the notes for a device - Return the appropriate notes given a device name as a parameter of the REST call '''
-        
         xml_file = os.path.join(os.getcwd(), 'common/mini-schema.xml')
         
         return_status, device_note = geo.get_element_note(xml_file, device_name)

@@ -33,8 +33,8 @@ names_and_notes = dict(zip(list_element_names('mini-schema.xml'), list_element_n
 print names_and_notes
 
 
-response1 = requests.get('http://127.0.0.1:5000/Geo_Notes/ct')
-response2 = requests.get('http://127.0.0.1:5000/Geo_Notes/hub_ethernet_sniffer')
+response1 = requests.get('http://127.0.0.1:5000/geo_Notes/ct')
+response2 = requests.get('http://127.0.0.1:5000/geo_Notes/hub_ethernet_sniffer')
 print response1.text, response1.status_code
 print response2.text
 
@@ -87,7 +87,7 @@ print type(ct_dict3.values()[0])
 
 #-------------------------------------
 
-a = requests.get('http://127.0.0.1:5000/Geo_Notes/ctdddd')
+a = requests.get('http://127.0.0.1:5000/geo_Notes/ctdddd')
 
 error_dict = a.json()
 print "dictionary4 = ", error_dict

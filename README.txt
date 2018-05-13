@@ -13,7 +13,7 @@ HOW TO RUN IT
 	---------------------------
 	
 	Show devices : shows list of devices : 
-		http://127.0.0.1/5000/devices
+		http://127.0.0.1:5000/devices
 	Api: REST API: Returns notes for a device : Some examples :
 		http://127.0.0.1:5000/geo_Notes/ct
 		http://127.0.0.1:5000/geo_Notes/hub_ethernet_sniffer

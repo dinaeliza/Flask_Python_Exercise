@@ -1,13 +1,14 @@
-from flask import Flask
+from flask import Blueprint
 from flask_restful import Api
 from Python_Exercise1.resources.geo_notes import Geo_Notes
-#from resources import geo_notes
 
-app1 = Flask(__name__)
+#app = Flask(__name__)
 
-api = Api(app1)
+api_bp = Blueprint('api', __name__)
 
-api.add_resource(Geo_Notes, '/Geo_Notes', '/Geo_Notes/<string:device_name>')
+api = Api(api_bp)
 
-#if __name__ == '__main__':
-#    app.run(debug=True)
+api.add_resource(Geo_Notes, '/geo_Notes', '/geo_Notes/<string:device_name>')
+
+#app.register_blueprint(api_bp)
+

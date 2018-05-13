@@ -1,7 +1,16 @@
 from flask import Flask
 
-from green_devices import app
-from rest_api.geo_api_app import app1
+app = Flask(__name__)
+
+@app.route('/hello')
+def hello():
+    return 'Hello , World !!!!!!!'
+
+from green_devices.show_devices import show_devices_bp
+app.register_blueprint(show_devices_bp)
+
+from rest_api.geo_api_app import api_bp
+app.register_blueprint(api_bp)
+
 app.run()
-app1.run()
 

@@ -4,7 +4,8 @@ DESCRIPTION
 HOW TO RUN IT
 	Notes about the exercise: 
 	1. Need to create a virtual environment and go to the Python_Exercise1 directory*  to run the flask application.
-	*Noticed that if run from any other folder either an error (mini-schema.xml not found) or internal server error is 		returned. (troubleshooting in progress)
+	*Noticed that if run from any other folder either an error (mini-schema.xml not found)
+	or internal server error is returned. (troubleshooting in progress)
 
 	---------------------------
 	mkvirtualenv Python_Exercise

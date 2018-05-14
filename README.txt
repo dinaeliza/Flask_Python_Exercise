@@ -28,10 +28,13 @@ KEY DEPENDENCIES:
 	-requests
 
 HOW TO RUN THE UNIT TESTS
-	tbd
+	python basic_test.py
+	Unit test framework - tbd
 
 FUTURE ENHANCEMENTS
-	tbd
+	> Unit Test Framework
+	> Enhance the test script to explore the result of verbs other than 'get'.
+	> Enhance the webserver and test to return all devices.
 
 SAMPLE OUTPUT:
 	------------------------------------------------------------------------

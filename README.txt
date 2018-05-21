@@ -2,13 +2,19 @@ DESCRIPTION
 	Web Server with REST API using flask and flask_restful.
 
 HOW TO RUN IT
+	Notes about the exercise: 
+	1. Need to create a virtual environment and go to the Python_Exercise1 directory*  to run the flask application.
+	*Noticed that if run from any other folder either an error (mini-schema.xml not found)
+	or internal server error is returned. (troubleshooting in progress)
+
+	---------------------------
 	mkvirtualenv Python_Exercise
 	pip install requirements
 	---------------------------
 	workon Python_Exercise
 	---------------------------
-
-	export FLASK_APP=$HOME/Python_Exercise1
+	(Python_Exercise) $HOME/Python_Exercise1/
+	export FLASK_APP=$HOME/Python_Exercise1/
 	flask run
 	---------------------------
 	
@@ -28,10 +34,13 @@ KEY DEPENDENCIES:
 	-requests
 
 HOW TO RUN THE UNIT TESTS
-	tbd
+	python basic_test.py
+	Unit test framework - tbd
 
 FUTURE ENHANCEMENTS
-	tbd
+	> Unit Test Framework
+	> Enhance the test script to explore the result of verbs other than 'get'.
+	> Enhance the webserver and test to return all devices.
 
 SAMPLE OUTPUT:
 	------------------------------------------------------------------------

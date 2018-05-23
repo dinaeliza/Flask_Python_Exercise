@@ -98,5 +98,19 @@ print a.status_code
 print str(error_dict)
 print type(a)
 
+print '+' * 50
 
+
+
+
+response10 = requests.post('http://127.0.0.1:5000/geo_Notes/hub_ethernet_sniffer')
+response11 = requests.put('http://127.0.0.1:5000/geo_Notes/hub_ethernet_sniffer')
+response12 = requests.delete('http://127.0.0.1:5000/geo_Notes/hub_ethernet_sniffer')
+
+
+print response10.text, response10.status_code
+print response11.text, response11.status_code
+print response12.text, response12.status_code
+
+print '+' * 50
 
